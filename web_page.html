@@ -1,37 +1,63 @@
-<!--VC 6th Web Page-->
-<!DOCTYPE html5>
+<!-- VC 6th Web Page -->
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Volleyball</title>
-        <meta charset="UTF-8"></head>
-        <style>
-            body{
-                background-color:rgb(161, 19, 19);
-                font-family: Georgia, 'Times new roman', times, serif;
-                color:rgb(250, 249, 249);
-            }
-            img{
-                width: 200px;
-            }
-            #one-wrapper{
-                margin: 3px;
-                padding: 10px;
-            }
-            #content-wrapper{
-                display: flex;
-            }
-        </style>
-    <body>
-        <h1>Volleyball</h1>
-        <div id="content-wrapper"></div>
-        <div id="one-wrapper"></div>
-        <div id="left">
-        <img src="https://i.etsystatic.com/13644400/r/il/c2810f/1903760127/il_fullxfull.1903760127_8vd0.jpg"/>
-        <h2> different types positions</h2>
-        <p>There are different types of potions such as libro, setter, outside hitter, and opposite hitter, there is also a middle blocker.</p>
-        <p>The libro picks up all the balls that are harder to pick up and the libro might even have to dive for it this is the position i do. Ive been doing volleyball for 4 years and ive come to realize its one of my top 3 favorite sports. </p>
-       
-    </body>
-    <img src="https://www.badensports.com/cdn/shop/products/VX450L-03F_VIRTUAL.png?v=1737504439"/>
-    <img src="https://www.badensports.com/cdn/shop/products/VX450L-03F_VIRTUAL.png?v=1737504439"/>
+<head>
+<title>Volleyball</title>
+<meta charset="UTF-8">
+
+<style>
+body {
+background-color: rgb(161, 19, 19);
+font-family: Georgia, 'Times New Roman', serif;
+color: rgb(250, 249, 249);
+padding: 20px;
+}
+
+img {
+width: 200px;
+}
+
+#hoverImg {
+transition: 0.3s;
+}
+
+#extra {
+display: none;
+margin-top: 15px;
+}
+
+button {
+margin-top: 20px;
+padding: 10px 15px;
+font-size: 16px;
+cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Volleyball</h1>
+
+<img id="hoverImg"
+src="https://i.etsystatic.com/13644400/r/il/c2810f/1903760127/il_fullxfull.1903760127_8vd0.jpg">
+
+<h2>Different Volleyball Positions</h2>
+<p>There are different types of positions such as libero, setter, outside hitter, opposite hitter, and middle blocker.</p>
+<p>
+The libero picks up the harder balls and sometimes even has to dive.
+This is the position I play! I've been doing volleyball for 4 years.
+</p>
+
+<button onclick="toggleExtra()">Show More</button>
+
+<div id="extra">
+<p>
+Volleyball takes teamwork and communication
+Every position is important and contributes to the game flow!
+</p>
+<img src="https://www.badensports.com/cdn/shop/products/VX450L-03F_VIRTUAL.png?v=1737504439">
+</div>
+
+</body>
 </html>

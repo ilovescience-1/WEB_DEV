@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to my first  Flask site!</h1>
+{% extends "base.html" %}
+{% block content %}Home - Flask{% endblock %}
+
+{% block body %}
+    <h1>Home page</h1>
     <form method="POST">
-        <label for="name">Entedr your username</label>
+        <label for="name">Enter your username</label>
         <input type="text" name="name"
         placeholder="what is your name?">
         <br>
@@ -16,5 +12,4 @@
         value="submit">
     </form>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX9tvpYaY-4X-gGi936erArPCXM32KfifE1Q&s" alt="pibble">
-</body>
-</html>
+{% endblock %}

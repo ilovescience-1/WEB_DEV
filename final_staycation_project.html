@@ -1,30 +1,47 @@
-<!--Final -->
+<!-- Final Website -->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Wecome To Zions National Park</title>
+<title>Welcome To Zion National Park</title>
 <meta charset="UTF-8">
 
 <style>
-    h1,h2,h3,p{
-        text-align: center;
-        margin: 20px, 0;
-    }
 body {
-background-color: rgb(156, 68, 16);
+background-color: rgb(185, 81, 12);
 font-family: Georgia, 'Times New Roman', serif;
-color: rgb(104, 38, 5);
+color: rgb(103, 28, 7);
 padding: 20px;
+margin: 0;
+}
+
+h1, h2, p {
+text-align: center;
+margin: 20px 0;
+}
+
+
+.container {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+max-width: 900px;
+margin: auto;
+}
+
+
+.imgBox {
+display: flex;
+justify-content: center;
 }
 
 img {
-width: 600px;
-margin: Auto;
+width: 80%;
+border-radius: 10px;
+transition: 0.3s;
 }
 
-#hoverImg {
-transition: 0.3s;
-display:block;
+#hoverImg:hover {
+transform: scale(1.05);
 }
 
 #extra {
@@ -33,27 +50,84 @@ margin-top: 15px;
 }
 
 button {
-margin-top: 20px;
-padding: 10px 15px;
+display: block;
+margin: 20px auto;
+padding: 10px 18px;
 font-size: 16px;
-color:
+border: none;
+border-radius: 6px;
+background-color: rgb(142, 68, 29);
+color: white;
 cursor: pointer;
+}
+
+button:hover {
+background-color: rgb(104, 47, 19);
+}
+
+ul {
+max-width: 600px;
+margin: auto;
+padding: 10px 20px;
 }
 </style>
 </head>
 
 <body>
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<h1>Welcome to zions national park</h1>
-<img id="hoverImg"
-src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
-<button onclick="toggleExtra()">Show More Info</button>
-<p>welcome to zions national park. Zions national park is a very touristic place for people who love to travela and go on beautiful walks and hikes. There are so many fun out door activities you could to to enjoy your stay at zions national park. This is a very famous tourist attraction, people from all over the world come to experience this parks amazing hikes and views.</p>
+<h1>Welcome to Zion National Park</h1>
+
+<div class="container">
+
+<div class="imgBox">
+<img id="hoverImg" src="https://www.offthebeatenpath.com/wp-content/uploads/2021/08/entrance-zion-national-park.jpg">
 </div>
-</head>
+
+<p>
+Zion National Park is one of Utah’s most beautiful and popular vacation destinations.
+The park is filled with giant red cliffs, peaceful rivers, and famous hiking trails that people travel from all over the world to experience.
+If you love nature, adventure, or breathtaking views, Zion is the perfect place to explore and enjoy.
+</p>
+
+
+<h2>Top 4 Reasons to Visit Zion</h2>
+<ul>
+<li>World-famous hikes like Angel’s Landing and The Narrows</li>
+<li>Incredible photography spots and scenic views</li>
+<li>Wildlife, rivers, and beautiful red rock cliffs</li>
+<li>A peaceful place to relax, explore, and reconnect with nature</li>
+</ul>
+
+<button onclick="toggleExtra()">Show More Info</button>
+
+<div id="extra">
+<div class="imgBox">
+<img src="https://www.gousa.in/sites/default/files/styles/hero_l/public/images/hero_media_image/2016-10/Zion_0.jpg?h=345ab7ac&itok=2eLFqdkx">
+</div>
+
+<div class="imgBox">
+<img src="https://wildlandtrekking.com/content/webp-express/webp-images/doc-root/content/uploads/2023/03/Iconic-Angels-Landing-Ridge.jpg.webp">
+</div>
+
+<p>
+Zion has activities for everyone—hiking, camping, stargazing, climbing, and sightseeing.
+Whether you're walking through the river at The Narrows or watching the sunset bounce off the cliffs,
+it’s a place you will never forget.
+</p>
+</div>
+
+</div>
+
+<script>
+function toggleExtra() {
+let box = document.getElementById("extra");
+if (box.style.display === "none") {
+box.style.display = "block";
+} else {
+box.style.display = "none";
+}
+}
+</script>
+
 </body>
 </html>
